@@ -203,7 +203,9 @@
               예약
             </a>
           </li>
-          <li class="aside_ico03">
+          <!-- 밤뒤골 전용(2026-11-19 운영 요청): 노출할 번호가 없어(기본번호 1833-9306) 모바일 메뉴 전화 아이콘도 숨긴다.
+               ⚠️ admin 「사이트 배포」 시 템플릿 원본으로 덮인다. -->
+          <li class="aside_ico03" style="display: none">
             <!-- data-* 속성 : data-footer-phone-link (property.contactPhone[0] → tel:) -->
             <a href="tel:" style="background-image: url('images/i2.png')" data-footer-phone-link>
               전화
