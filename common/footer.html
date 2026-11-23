@@ -8,9 +8,7 @@
     </div>
     <!-- data-* 속성 : data-footer-phone (번호 텍스트) / data-footer-phone-link (tel: 링크)
          소스: property.contactPhone (string[]). 번호가 여러 개면 이 링크를 개수만큼 복제해 " | " 로 구분 노출 -->
-    <!-- 밤뒤골 전용(2026-11-19 운영 요청): 노출할 번호가 없어 기본번호(1833-9306)가 뜨므로 전화번호 줄을 PC·모바일 모두 숨긴다.
-         ⚠️ admin 「사이트 배포」를 누르면 템플릿 원본으로 덮여 다시 보인다 — 배포 후 다시 넣어야 한다. -->
-    <div class="tel" style="display: none">
+    <div class="tel">
       <!-- "T." 는 styles/style.css 의 ::before 로 붙인다.
            HTML 에 텍스트로 두면 prettier 가 줄바꿈해 "T. 010-…" 처럼 공백이 생긴다. -->
       <a href="tel:" data-footer-phone-link><span data-footer-phone></span></a>
